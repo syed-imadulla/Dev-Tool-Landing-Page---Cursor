@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #14120B;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 ;
+}
+ nav .nav-links a{
+    color: #d7d6d5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+#download{
+    background-color: #D7D6D5;
+    color: #14120B;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3.40282e38px;
+}
+#signin{
+background-color: #1b1913;
+    color: #d7d6d5;
+    border: 1px solid #edecec;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3.40282e38px;
+}
