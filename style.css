@@ -3,43 +3,108 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #14120B;
-    font-family: Arial, sans-serif;
+
+:root {
+  --color-theme-bg: #14120b;
+  --color-theme-fg: #edecec;
+  --color-theme-fg-02: #d7d6d5;
+
+  --color-theme-card-hex: #1b1913;
+  --color-theme-card-rgb: 27 29 39;
+
+  --color-theme-card-01-hex: #1d1b15;
+  --color-theme-card-02-hex: #201e18;
+  --color-theme-card-03-hex: #26241e;
+  --color-theme-card-04-hex: #2b2923;
+
+  --color-theme-card-hover-hex: #201e18;
+  --color-theme-card-hover-light-hex: #1d1b15;
+  --color-theme-card-warm-hex: #1c1713;
+
+  --color-theme-product-chrome: var(--color-theme-bg);
+  --color-theme-product-editor: var(--color-theme-card-hex);
 }
 
+body{
+    background-color: var(--color-theme-bg);
+    font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+header{
+    background-color: var(--color-theme-bg);
+    color: var(--color-theme-fg);
+    padding: 0 20px;
+    width: 100%;
+}
 nav{
     height: 52px;
-    display: flex;
-    justify-content: space-around;
+    max-width: 1300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 0 0 ;
-}
- nav .nav-links a{
-    color: #d7d6d5;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0 15px;
+    margin-left: 90.4px;
+    margin-right: 90.4px;
+    margin-inline: auto;
 }
 
-#download{
-    background-color: #D7D6D5;
-    color: #14120B;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 500;
+nav .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+nav .nav-links a{
+    color: var(--color-theme-fg);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding:5.6px 15px;
+    display: inline;
+    background-color: transparent;
+    border: 1px solid transparent;
+}   
+
+nav .nav-links a:hover{
+    color: var(--color-theme-fg-02);
+}
+
+#download {
+    background-color: var(--color-theme-fg);
+    color: var(--color-theme-bg);
+    border: 1px solid var(--color-theme-fg);
     cursor: pointer;
     border-radius: 3.40282e38px;
+    font-weight: 400;
+    display:inline-flex;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    padding: .4em .75em .42em;
+    font-size: 0.875rem;
+    margin-left: 5px;
 }
+
 #signin{
-background-color: #1b1913;
-    color: #d7d6d5;
-    border: 1px solid #edecec;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 500;
+    background-color: var(--color-theme-bg);
+    color: var(--color-theme-fg);
+    border: 1px solid var(--color-theme-fg);
     cursor: pointer;
     border-radius: 3.40282e38px;
+    font-weight: 400;
+    display:inline-flex;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    padding: .4em .75em .42em;
+    font-size: 0.875rem;
+    margin-right:5px;
 }
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
